@@ -1,0 +1,189 @@
+object CalcForm: TCalcForm
+  Left = 394
+  Height = 411
+  Top = 123
+  Width = 297
+  Caption = 'Check out Ma Calc Dude'
+  ClientHeight = 411
+  ClientWidth = 297
+  LCLVersion = '1.8.4.0'
+  object NumField: TEdit
+    Left = 10
+    Height = 70
+    Top = 10
+    Width = 278
+    AutoSize = False
+    TabOrder = 0
+  end
+  object NumBut1: TButton
+    Left = 10
+    Height = 56
+    Top = 280
+    Width = 62
+    Caption = '1'
+    OnClick = NumButClick
+    TabOrder = 1
+  end
+  object NumBut2: TButton
+    Left = 80
+    Height = 56
+    Top = 280
+    Width = 62
+    Caption = '2'
+    OnClick = NumButClick
+    TabOrder = 2
+  end
+  object NumBut3: TButton
+    Left = 152
+    Height = 56
+    Top = 280
+    Width = 62
+    Caption = '3'
+    OnClick = NumButClick
+    TabOrder = 3
+  end
+  object NumBut4: TButton
+    Left = 10
+    Height = 56
+    Top = 216
+    Width = 62
+    Caption = '4'
+    OnClick = NumButClick
+    TabOrder = 4
+  end
+  object NumBut5: TButton
+    Left = 80
+    Height = 56
+    Top = 216
+    Width = 62
+    Caption = '5'
+    OnClick = NumButClick
+    TabOrder = 5
+  end
+  object NumBut6: TButton
+    Left = 152
+    Height = 56
+    Top = 216
+    Width = 62
+    Caption = '6'
+    OnClick = NumButClick
+    TabOrder = 6
+  end
+  object NumBut7: TButton
+    Left = 10
+    Height = 56
+    Top = 152
+    Width = 62
+    Caption = '7'
+    OnClick = NumButClick
+    TabOrder = 7
+  end
+  object NumBut8: TButton
+    Left = 80
+    Height = 56
+    Top = 152
+    Width = 62
+    Caption = '8'
+    OnClick = NumButClick
+    TabOrder = 8
+  end
+  object NumBut9: TButton
+    Left = 152
+    Height = 56
+    Top = 152
+    Width = 62
+    Caption = '9'
+    OnClick = NumButClick
+    TabOrder = 9
+  end
+  object NumBut10: TButton
+    Left = 10
+    Height = 56
+    Top = 344
+    Width = 132
+    Caption = '0'
+    OnClick = ZeroClick
+    TabOrder = 10
+  end
+  object Comma: TButton
+    Left = 152
+    Height = 56
+    Top = 344
+    Width = 62
+    Caption = '.'
+    OnClick = CommaClick
+    TabOrder = 11
+  end
+  object ResButton: TButton
+    Left = 224
+    Height = 56
+    Top = 344
+    Width = 62
+    Caption = '='
+    OnClick = ResButtonClick
+    TabOrder = 12
+  end
+  object AddButton: TButton
+    Left = 224
+    Height = 56
+    Top = 280
+    Width = 62
+    Caption = '+'
+    OnClick = OpButtonClick
+    TabOrder = 13
+  end
+  object SubsButton: TButton
+    Left = 224
+    Height = 56
+    Top = 216
+    Width = 62
+    Caption = '-'
+    OnClick = OpButtonClick
+    TabOrder = 14
+  end
+  object MultButton: TButton
+    Left = 224
+    Height = 56
+    Top = 152
+    Width = 62
+    Caption = '*'
+    OnClick = OpButtonClick
+    TabOrder = 15
+  end
+  object DivButton: TButton
+    Left = 224
+    Height = 56
+    Top = 88
+    Width = 62
+    Caption = '/'
+    OnClick = OpButtonClick
+    TabOrder = 16
+  end
+  object ClearHist: TButton
+    Left = 80
+    Height = 56
+    Top = 88
+    Width = 62
+    Caption = 'AC'
+    OnClick = ClearHistClick
+    TabOrder = 17
+  end
+  object EditButton: TButton
+    Left = 10
+    Height = 56
+    Top = 88
+    Width = 62
+    Caption = '<-'
+    OnClick = EditButtonClick
+    TabOrder = 18
+  end
+  object ClearAll: TButton
+    Left = 152
+    Height = 56
+    Top = 88
+    Width = 62
+    Caption = 'C'
+    OnClick = ClearAllClick
+    TabOrder = 19
+  end
+end
