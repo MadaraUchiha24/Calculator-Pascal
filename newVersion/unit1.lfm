@@ -1,0 +1,610 @@
+object calcForm: TcalcForm
+  Left = 832
+  Height = 434
+  Top = 172
+  Width = 349
+  Caption = '4:20 Calc'
+  ClientHeight = 434
+  ClientWidth = 349
+  Color = 16777134
+  DesignTimePPI = 120
+  OnCreate = FormCreate
+  LCLVersion = '1.8.4.0'
+  Scaled = False
+  object sqrtOpBtn: TButton
+    Left = 88
+    Height = 48
+    Top = 144
+    Width = 86
+    Caption = 'sqrt'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = sqrtOpBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 0
+  end
+  object percBtn: TButton
+    Left = 0
+    Height = 48
+    Top = 144
+    Width = 86
+    Caption = '%'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = percBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 1
+  end
+  object revBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 144
+    Width = 86
+    Caption = '1/x'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = revBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 2
+  end
+  object clearLastBtn: TButton
+    Left = 0
+    Height = 48
+    Top = 192
+    Width = 86
+    Caption = 'CE'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = clearLastBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 3
+  end
+  object clearAllBtn: TButton
+    Left = 88
+    Height = 48
+    Top = 192
+    Width = 86
+    Caption = 'C'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = clearAllBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 4
+  end
+  object delEndBtn: TButton
+    Left = 176
+    Height = 48
+    Top = 192
+    Width = 86
+    Caption = '<-'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = delEndBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 5
+  end
+  object divBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 192
+    Width = 86
+    Caption = '/'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = oprtBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 6
+  end
+  object numBtn_7: TButton
+    Left = 0
+    Height = 48
+    Top = 240
+    Width = 86
+    Caption = '7'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 7
+  end
+  object numBtn_8: TButton
+    Left = 88
+    Height = 48
+    Top = 240
+    Width = 86
+    Caption = '8'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 8
+  end
+  object numBtn_9: TButton
+    Left = 176
+    Height = 48
+    Top = 240
+    Width = 86
+    Caption = '9'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 9
+  end
+  object mulBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 240
+    Width = 86
+    Caption = '*'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = oprtBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 10
+  end
+  object numBtn_4: TButton
+    Left = 0
+    Height = 48
+    Top = 288
+    Width = 86
+    Caption = '4'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 11
+  end
+  object numBtn_5: TButton
+    Left = 88
+    Height = 48
+    Top = 288
+    Width = 86
+    Caption = '5'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 12
+  end
+  object numBtn_6: TButton
+    Left = 176
+    Height = 48
+    Top = 288
+    Width = 86
+    Caption = '6'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 13
+  end
+  object subBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 288
+    Width = 86
+    Caption = '-'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = oprtBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 14
+  end
+  object invertSignBtn: TButton
+    Left = 0
+    Height = 48
+    Top = 384
+    Width = 86
+    HelpType = htKeyword
+    Caption = '+/-'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = invertSignBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 15
+  end
+  object numBtn_1: TButton
+    Left = 0
+    Height = 48
+    Top = 336
+    Width = 86
+    Caption = '1'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 16
+  end
+  object numBtn_2: TButton
+    Left = 88
+    Height = 48
+    Top = 336
+    Width = 86
+    Caption = '2'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 17
+  end
+  object numBtn_3: TButton
+    Left = 176
+    Height = 48
+    Top = 336
+    Width = 86
+    Caption = '3'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 18
+  end
+  object plusBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 336
+    Width = 86
+    Caption = '+'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = oprtBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 19
+  end
+  object numBtn_0: TButton
+    Left = 88
+    Height = 48
+    Top = 384
+    Width = 86
+    HelpType = htKeyword
+    Caption = '0'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = numBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 20
+  end
+  object pointBtn: TButton
+    Left = 176
+    Height = 48
+    Top = 384
+    Width = 86
+    Caption = ','
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = pointBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 21
+  end
+  object resultBtn: TButton
+    Left = 264
+    Height = 48
+    Top = 384
+    Width = 86
+    Caption = '='
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = resultBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 22
+  end
+  object binPowOpBtn: TButton
+    Left = 176
+    Height = 48
+    Top = 144
+    Width = 86
+    Caption = 'x^2'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = binPowOpBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 23
+  end
+  object memCallBtn: TButton
+    Left = 70
+    Height = 48
+    Top = 96
+    Width = 68
+    Caption = 'MR'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = memCallBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 24
+  end
+  object memAddBtn: TButton
+    Left = 141
+    Height = 48
+    Top = 96
+    Width = 68
+    Caption = 'M+'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = memAddBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 25
+  end
+  object memSubBtn: TButton
+    Left = 211
+    Height = 48
+    Top = 96
+    Width = 68
+    Caption = 'M-'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = memSubBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 26
+  end
+  object memPushBtn: TButton
+    Left = 282
+    Height = 48
+    Top = 96
+    Width = 68
+    Caption = 'MS'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = memPushBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 27
+  end
+  object clearMemBtn: TButton
+    Left = 0
+    Height = 48
+    Top = 96
+    Width = 68
+    Caption = 'MC'
+    Color = clYellow
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -20
+    Font.Name = '@Yu Gothic UI'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = clearMemBtnClick
+    OnKeyDown = KeyDown
+    ParentFont = False
+    TabOrder = 28
+  end
+  object calcArea: TEdit
+    Left = 0
+    Height = 56
+    Top = 40
+    Width = 350
+    Alignment = taRightJustify
+    AutoSize = False
+    BorderStyle = bsNone
+    Color = 16777134
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 16614024
+    Font.Height = -30
+    Font.Name = '@Yu Gothic UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    ParentShowHint = False
+    TabOrder = 29
+    Text = '0'
+  end
+  object histArea: TEdit
+    Left = 0
+    Height = 40
+    Top = 0
+    Width = 350
+    Alignment = taRightJustify
+    AutoSize = False
+    BorderStyle = bsNone
+    Color = 16621194
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = 16777153
+    Font.Height = -20
+    Font.Name = '@Microsoft JhengHei'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    ParentShowHint = False
+    TabOrder = 30
+  end
+end
